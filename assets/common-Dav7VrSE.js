@@ -1,0 +1,1 @@
+const l=(e,n=350)=>{let t=null;return function(...u){clearTimeout(t),t=setTimeout(()=>{e.apply(this,u)},n)}},o=(e,n)=>{let t=null;return function(){t||(t=setTimeout(()=>{e.apply(this,arguments),t=null},n))}};export{l as d,o as t};
